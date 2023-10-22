@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fighting Fantasy Spil</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="game-container" id="level1">
+        <h1>Niveau 1</h1>
+        <p>Du vågner i en lille landsby. Landsbyens ældste har hørt om en legendarisk skat kaldet "Den Gyldne Dronning," der siges at være skjult dybt inde i en mystisk skov. Hvad vil du gøre?</p>
+        <button id="level1-option1">Gå ind i skoven</button>
+        <button id="level1-option2">Undersøg landsbyen nærmere.</button>
+    </div>
+    <div class="game-container" id="level2" style="display: none;">
+        <h1>Niveau 2</h1>
+        <p>Du befinder dig ved skovens rand. Det er mørkt og tæt. Du hører mærkelige lyde inde i skoven. Hvad vil du gøre? </p>
+        <button id="level2-option1">Gå dybere ind i skoven.</button>
+        <button id="level2-option2">Vend om og gå væk.</button>
+    </div>
+    <div class="game-container" id="level3" style="display: none;">
+        <h1>Niveau 3</h1>
+        <p>Du er nu dybt inde i skoven. Det er mørkt, og træerne synes at bevæge sig. Hvad vil du gøre?</p>
+        <button id="level3-option1">Følg de mystiske lyde.</button>
+        <button id="level3-option2">Forsøg at finde en vej ud.</button>
+    </div>
+    <div class="game-container" id="level4" style="display: none;">
+        <h1>Niveau 4</h1>
+        <p>Du har gået dybere ind i skoven og er nu tabt. Hvad vil du gøre?</p>
+        <button id="level4-option1">Forsøg at finde en sti ud.</button>
+        <button id="level4-option2">Vent på hjælp.</button>
+    </div>
+    <div class="game-container" id="level5" style="display: none;">
+        <h1>Niveau 5</h1>
+        <p>Du står ved en bred flod. Broen er ødelagt. Hvad vil du gøre?</p>
+        <button id="level5-option1">Prøv at krydse floden svømmende.</button>
+        <button id="level5-option2"> Følg floden for at finde en anden vej.</button>
+    </div>
+    <div class="game-container" id="level6" style="display: none;">
+        <h1>Niveau 6</h1>
+        <p>Du finder en gammel bro over floden. Hvad vil du gøre?</p>
+        <button id="level6-option1">Kryds broen</button>
+        <button id="level6-option2">Ledsag floden videre.</button>
+    </div>
+    <div class="game-container" id="level7" style="display: none;">
+        <h1>Niveau 7</h1>
+        <p>Du er nået til foden af et stort bjerg. Hvad vil du gøre?</p>
+        <button id="level7-option1">Klatre op ad bjerget</button>
+        <button id="level7-option2">Vend om og gå væk.</button>
+    </div>
+    <div class="game-container" id="level8" style="display: none;">
+        <h1>Niveau 8</h1>
+        <p>Du ser en mørk grotte i bjerget. Hvad vil du gøre?</p>
+        <button id="level8-option1">Gå ind i grotten</button>
+        <button id="level8-option2">Ignorer grotten</button>
+    </div>
+    <div class="game-container" id="level9" style="display: none;">
+        <h1>Niveau 9</h1>
+        <p>Du har fundet en skat i grotten! Hvad vil du gøre nu?</p>
+        <button id="level9-option1">Tag skatten</button>
+        <button id="level9-option2">Forlad skatten</button>
+    </div>
+    <div class="game-container" id="level10" style="display: none;">
+        <h1>Niveau 10</h1>
+        <p>Du står nu i en mørk dal, og det bliver koldere. Hvad vil du gøre?</p>
+        <button id="level10-option1">Udforsk dalen.</button>
+        <button id="level10-option2"> Find et sted at hvile.</button>
+    </div>
+    <div class="game-container" id="level11" style="display: none;">
+        <h1>Niveau 11</h1>
+        <p>Dalen bliver dybere, og du ser is og sne omkring dig. Hvad vil du gøre?</p>
+        <button id="level11-option1">Gå videre gennem dalen.</button>
+        <button id="level11-option2">  Vend om og forsøg at komme ud af dalen. </button>
+    </div>
+    <div class="game-container" id="level12" style="display: none;">
+        <h1>Niveau 12</h1>
+        <p>Du står nu midt i et voldsomt snevejr. Hvad vil du gøre?</p>
+        <button id="level12-option1"> Prøv at gå videre.</button>
+        <button id="level12-option2"> Find en læ for stormen.</button>
+    </div>
+    <div class="game-container" id="level13" style="display: none;">
+        <h1>Niveau 13</h1>
+        <p>Du er nu nået til et snedækket bjergpas. Hvad vil du gøre?</p>
+        <button id="level13-option1">Kryds bjergpasset.</button>
+        <button id="level13-option2"> Vend om og gå tilbage ned ad bjerget.</button>
+    </div>
+    <div class="game-container" id="level14" style="display: none;">
+        <h1>Niveau 14</h1>
+        <p>Du befinder dig i en dal fyldt med tåge og mystik. Hvad vil du gøre?</p>
+        <button id="level14-option1">Forsøg at finde vej gennem tågen.</button>
+        <button id="level14-option2"> Vent på tågen til at lette. </button>
+    </div>
+    <div class="game-container" id="level15" style="display: none;">
+        <h1>Niveau 15: Vandfaldet</h1>
+        <p>Du hører lyden af et vandfald i det fjerne. Hvad vil du gøre?</p>
+        <button id="level15-option1">Følg lyden til vandfaldet</button>
+        <button id="level15-option2">Undersøg dalen nærmere</button>
+    </div>
+    <div class="game-container" id="level16" style="display: none;">
+        <h1>Niveau 16: Vandfaldet's Hemmelighed</h1>
+        <p>Du finder vandfaldet og en skjult grotte bag det. Hvad vil du gøre?</p>
+        <button id="level16-option1">Gå ind i grotten</button>
+        <button id="level16-option2">Vend tilbage til dalen</button>
+    </div>
+    <div class="game-container" id="level17" style="display: none;">
+        <h1>Niveau 17: Mystiske Symboler</h1>
+        <p>I grotten ser du mystiske symboler på væggene. Hvad vil du gøre?</p>
+        <button id="level17-option1">Studér symbolerne nærmere</button>
+        <button id="level17-option2">Forsøg at finde noget værdifuldt</button>
+    </div>
+    <div class="game-container" id="level18" style="display: none;">
+        <h1>Niveau 18: Porten til Den Gyldne Dronning</h1>
+        <p>Du finder en skjult port i grotten. Hvad vil du gøre?</p>
+        <button id="level18-option1">Åbn porten</button>
+        <button id="level18-option2">Vend om og gå væk</button>
+    </div>
+    <div class="game-container" id="level19" style="display: none;">
+        <h1>Niveau 19: Den Gyldne Dronning</h1>
+        <p>Bag porten ser du Den Gyldne Dronning. Skatten er din! Hvad vil du gøre?</p>
+        <button id="level19-option1">Tag skatten</button>
+        <button id="level19-option2">Tænk over konsekvenserne</button>
+    </div>
+    <div class="game-container" id="level20" style="display: none;">
+        <h1>Niveau 20: Hjemrejse</h1>
+        <p>Du har skatten, men nu skal du finde vej hjem. Hvad vil du gøre?</p>
+        <button id="level20-option1">Begynd rejsen hjem</button>
+        <button id="level20-option2">Undersøg området nærmere</button>
+    </div>
+    <div class="game-container" id="level21" style="display: none;">
+        <h1>Niveau 21: Tilbage til Dalen</h1>
+        <p>Du vender tilbage til tågedalen. Hvad vil du gøre?</p>
+        <button id="level21-option1">Forsæt rejsen hjemad</button>
+        <button id="level21-option2">Undersøg dalen nærmere</button>
+    </div>
+    <div class="game-container" id="level22" style="display: none;">
+        <h1>Niveau 22: Den Forladte Landsby</h1>
+        <p>Inde i dalen opdager du en forladt landsby. Hvad vil du gøre?</p>
+        <button id="level22-option1">Gå ind i landsbyen</button>
+        <button id="level22-option2">Forsæt din rejse</button>
+    </div>
+    <div class="game-container" id="level23" style="display: none;">
+        <h1>Niveau 23: Skovens Mørke</h1>
+        <p>Natten falder på, og skoven bliver mørk. Hvad vil du gøre?</p>
+        <button id="level23-option1">Slå lejr for natten</button>
+        <button id="level23-option2">Forsæt gennem skoven</button>
+    </div>
+    <div class="game-container" id="level24" style="display: none;">
+        <h1>Niveau 24: Den Mystiske Fremmede</h1>
+        <p>Du møder en mystisk fremmed i skoven. Hvad vil du gøre?</p>
+        <button id="level24-option1">Tal med den fremmede</button>
+        <button id="level24-option2">Ignorer den fremmede</button>
+    </div>
+    <div class="game-container" id="level25" style="display: none;">
+        <h1>Niveau 25: Skovens Udgang</h1>
+        <p>Du ser en lysning i skoven, hvilket synes at være vejen ud. Hvad vil du gøre?</p>
+        <button id="level25-option1">Gå mod lysningen</button>
+        <button id="level25-option2">Forsæt gennem skoven</button>
+    </div>
+    <!-- Tidligere niveauer og HTML-kode for Level 1 til Level 25 er uændret og er ikke inkluderet her. -->
+    <div class="game-container" id="level26" style="display: none;">
+      <h1>Niveau 26: Den Fortryllede Bro</h1>
+        <p>Du når en fortryllet bro. Hvad vil du gøre?</p>
+        <button id="level26-option1">Kryds broen</button>
+        <button id="level26-option2">Undersøg broen nærmere</button>
+    </div>
+    <div class="game-container" id="level27" style="display: none;">
+        <h1>Niveau 27: Den Skumle Skov</h1>
+        <p>Du kommer ind i en skumlet skov. Hvad vil du gøre?</p>
+        <button id="level27-option1">Fortsæt gennem skoven</button>
+        <button id="level27-option2">Søg efter en sti</button>
+    </div>
+    <div class="game-container" id="level28" style="display: none;">
+        <h1>Niveau 28: Slutningen af Din Rejse</h1>
+        <p>Din lange rejse er endelig forbi. Hvad vil du gøre nu?</p>
+        <button id="level28-option1">Afslut spillet</button>
+        <button id="level28-option2">Start forfra</button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
